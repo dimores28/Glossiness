@@ -1,8 +1,8 @@
-/* css var - #1D9D73 */
+
 @font-face {
 	font-family: 'Proxima Nova';
-	src: url('..fonts/ProximaNova-Bold.woff2') format('woff2'),
-		 url('..fonts/ProximaNova-Bold.woff') format('woff');
+	src: url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+		 url('../fonts/ProximaNova-Bold.woff') format('woff');
 	font-weight: bold;
 	font-style: normal;
 	font-display: swap;
@@ -18,16 +18,21 @@
 }
 
 
+:root {
+	--main-color: #44C697;
+	--primary-text-color: #1E2E36;
+}
+
 
 body{
 	font-family: 'Proxima Nova', sans-serif;
 	font-weight: normal;
-	color: #1E2E36;
+	color: var(--primary-text-color);
 }
 
 h1,h2,h3,.h1,.h2,.h3{
 	font-weight: 300;
-	color: #333;
+	color: var(--primary-text-color)
 }
 
 h1, .h1{
