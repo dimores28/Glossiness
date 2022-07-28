@@ -68,3 +68,56 @@
 .active {
     border-bottom: 3px solid var(--main-color);
 }
+
+@media (max-width: 1200px) {
+    .header-mavigation {
+        flex-direction: column;
+    }
+
+    .contacts{
+        margin-bottom: 20px;
+    }
+
+    .menu {
+        flex-direction: column;
+    }
+
+    .menu__item {
+        margin: 10px 0;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .contacts__social span {
+        display: none;
+    }
+}
+
+@media (max-width: 392px) {
+    .contacts {
+        flex-direction: column;
+    }
+
+    .contacts__social {
+        margin: 10px 0;
+        order: 1;
+    }
+}
+
+.filters {
+    display: flex;
+}
+
+.filters__item {
+    margin-left: 40px;
+}
+
+.filters__item a{
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 125%;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--primary-text-color)
+}
