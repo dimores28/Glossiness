@@ -105,12 +105,22 @@
     }
 }
 
+.categories {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: bold;
+	font-size: 18px;
+	line-height: 125%;
+}
+
 .filters {
     display: flex;
 }
 
 .filters__item {
-    margin-left: 40px;
+    margin-right: 40px;
+    position: relative;
 }
 
 .filters__item a{
@@ -121,3 +131,54 @@
     text-transform: uppercase;
     color: var(--primary-text-color)
 }
+
+.filters__item::after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: -20px;
+    width: 7px;
+    height: 7px;
+    border-top: 2px solid var(--primary-text-color) !important;
+    border-right: 2px solid var(--primary-text-color) !important;
+    transform: rotate(135deg);
+    display: inline-block;
+    border-radius: 1px;
+}
+
+.logo {
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 125%;
+    color: var(--primary-text-color);
+}
+
+.logo p {
+    display: inline;
+}
+
+.logo span {
+    color: var(--main-color);
+}
+
+.cart {
+    color: var(--primary-text-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-right: 30px;
+    position: relative;
+}
+
+.cart::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 30px;
+    top: -3px;
+    left: -35px;
+    background: url('../img/smoll/cart .png'); 
+}
+
+

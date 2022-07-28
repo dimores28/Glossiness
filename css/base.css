@@ -87,3 +87,16 @@ p{
 	box-sizing: border-box;
 }
 
+.btn {
+	background: var(--main-color);
+	border-radius: 3px;
+	padding: 14px 46px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 125%;
+	text-transform: uppercase;
+	border: none;
+	cursor: pointer;
+}
+
