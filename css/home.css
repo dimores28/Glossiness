@@ -200,6 +200,17 @@
     }
 }
 
+@media (max-width: 1130px) {
+    .categories {
+        flex-direction: column;
+    }
+
+    .filters {
+        order: 1;
+        padding-top: 20px;
+    }
+}
+
 
 .newslider {
     max-width: 1920px;
@@ -210,6 +221,47 @@
 .banner {
     background: #fff;
     position: absolute;
+    width: 462px;
     top: 0;
+    left: 51px;
     border-left: 15px solid var(--main-color);
+    z-index: 100;
+}
+
+.s-prev,
+.s-next {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid 1px var(--primary-text-color);
+    transition: all .3s;
+    position: relative;
+}
+
+.s-prev:hover,
+.s-next:hover {
+    background: var(--primary-text-color);
+}
+
+.s-prev::after,
+.s-next::after {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 35%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.s-prev::after {
+    border-right: solid var(--primary-text-color);
+    border-top: solid var(--primary-text-color);
+    width: 7px;  /* sqrt(7*7 + 7*7) */ 
+    height: 7px; /* это примерно 10 */
+    transform: rotate(45deg);
+}
+
+.s-prev:hover::after {
+    border-right: solid #fff;
+    border-top: solid #fff;
 }
